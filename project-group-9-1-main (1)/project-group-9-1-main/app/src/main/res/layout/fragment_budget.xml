@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.Budget.BudgetFragment">
+
+        <TextView
+            android:id="@+id/MonthandYear"
+            android:layout_width="233dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/month_year"
+            android:textColor="@android:color/black"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="377dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="16dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MonthandYear" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="377dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="30dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar1" />
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="377dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="30dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+        <ProgressBar
+            android:id="@+id/progressBar4"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="377dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="30dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar3" />
+
+        <ProgressBar
+            android:id="@+id/progressBar5"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="377dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="30dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar4" />
+
+        <ProgressBar
+            android:id="@+id/progressBar6"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="377dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="30dp"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar5"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/total_budget"
+            android:layout_width="217dp"
+            android:layout_height="42dp"
+            android:text="@string/totalBudget"
+            android:textColor="@android:color/black"
+            android:textSize="33dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar1"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar1"
+            app:layout_constraintHorizontal_bias="0.175"
+            app:layout_constraintStart_toStartOf="@+id/progressBar1"
+            app:layout_constraintTop_toTopOf="@+id/progressBar1"
+            app:layout_constraintVertical_bias="0.512" />
+
+        <TextView
+            android:id="@+id/rent"
+            android:layout_width="188dp"
+            android:layout_height="41dp"
+            android:text="@string/Rent"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar2"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar2"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintStart_toStartOf="@+id/progressBar2"
+            app:layout_constraintTop_toTopOf="@+id/progressBar2"
+            app:layout_constraintVertical_bias="0.45" />
+
+        <TextView
+            android:id="@+id/grub"
+            android:layout_width="188dp"
+            android:layout_height="41dp"
+            android:text="@string/Grub"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar3"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar3"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintStart_toStartOf="@+id/progressBar3"
+            app:layout_constraintTop_toTopOf="@+id/progressBar3" />
+
+        <TextView
+            android:id="@+id/car"
+            android:layout_width="188dp"
+            android:layout_height="41dp"
+            android:text="@string/Car"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar4"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar4"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintStart_toStartOf="@+id/progressBar4"
+            app:layout_constraintTop_toTopOf="@+id/progressBar4"
+            app:layout_constraintVertical_bias="0.525" />
+
+        <TextView
+            android:id="@+id/entertainment"
+            android:layout_width="209dp"
+            android:layout_height="45dp"
+            android:text="@string/Entertainment"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar5"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar5"
+            app:layout_constraintHorizontal_bias="0.166"
+            app:layout_constraintStart_toStartOf="@+id/progressBar5"
+            app:layout_constraintTop_toTopOf="@+id/progressBar5"
+            app:layout_constraintVertical_bias="0.666" />
+
+        <TextView
+            android:id="@+id/other"
+            android:layout_width="188dp"
+            android:layout_height="41dp"
+            android:text="@string/Other"
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar6"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar6"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintStart_toStartOf="@+id/progressBar6"
+            app:layout_constraintTop_toTopOf="@+id/progressBar6"
+            app:layout_constraintVertical_bias="0.6" />
+
+        <TextView
+            android:id="@+id/budget_total_budget"
+            android:layout_width="139dp"
+            android:layout_height="27dp"
+            android:text="@string/budgetTotalBudget"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar1"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar1"
+            app:layout_constraintHorizontal_bias="0.966"
+            app:layout_constraintStart_toStartOf="@+id/progressBar1"
+            app:layout_constraintTop_toTopOf="@+id/progressBar1"
+            app:layout_constraintVertical_bias="0.796" />
+
+        <TextView
+            android:id="@+id/budget_rent"
+            android:layout_width="139dp"
+            android:layout_height="27dp"
+            android:text="@string/budgetRent"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar2"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar2"
+            app:layout_constraintHorizontal_bias="0.966"
+            app:layout_constraintStart_toStartOf="@+id/progressBar2"
+            app:layout_constraintTop_toTopOf="@+id/progressBar2"
+            app:layout_constraintVertical_bias="0.833" />
+
+        <TextView
+            android:id="@+id/budget_grub"
+            android:layout_width="139dp"
+            android:layout_height="27dp"
+            android:text="@string/budgetGrub"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar3"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar3"
+            app:layout_constraintHorizontal_bias="0.957"
+            app:layout_constraintStart_toStartOf="@+id/progressBar3"
+            app:layout_constraintTop_toTopOf="@+id/progressBar3"
+            app:layout_constraintVertical_bias="0.833" />
+
+        <TextView
+            android:id="@+id/budget_car"
+            android:layout_width="139dp"
+            android:layout_height="27dp"
+            android:text="@string/budgetCar"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar4"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar4"
+            app:layout_constraintHorizontal_bias="0.966"
+            app:layout_constraintStart_toStartOf="@+id/progressBar4"
+            app:layout_constraintTop_toTopOf="@+id/progressBar4"
+            app:layout_constraintVertical_bias="0.796" />
+
+        <TextView
+            android:id="@+id/budget_entertainment"
+            android:layout_width="139dp"
+            android:layout_height="27dp"
+            android:text="@string/budgetEntertainment"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar5"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar5"
+            app:layout_constraintHorizontal_bias="0.957"
+            app:layout_constraintStart_toStartOf="@+id/progressBar5"
+            app:layout_constraintTop_toTopOf="@+id/progressBar5"
+            app:layout_constraintVertical_bias="0.777" />
+
+        <TextView
+            android:id="@+id/budget_other"
+            android:layout_width="139dp"
+            android:layout_height="27dp"
+            android:text="@string/budgetOther"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar6"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar6"
+            app:layout_constraintHorizontal_bias="0.953"
+            app:layout_constraintStart_toStartOf="@+id/progressBar6"
+            app:layout_constraintTop_toTopOf="@+id/progressBar6"
+            app:layout_constraintVertical_bias="0.722" />
+
+        <TextView
+            android:id="@+id/spent_total_budget"
+            android:layout_width="124dp"
+            android:layout_height="28dp"
+            android:text="@string/spentTotalBudget"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar1"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar1"
+            app:layout_constraintHorizontal_bias="0.96"
+            app:layout_constraintStart_toStartOf="@+id/progressBar1"
+            app:layout_constraintTop_toTopOf="@+id/progressBar1"
+            app:layout_constraintVertical_bias="0.15" />
+
+        <TextView
+            android:id="@+id/spent_rent"
+            android:layout_width="124dp"
+            android:layout_height="28dp"
+            android:text="@string/spentRent"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar2"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar2"
+            app:layout_constraintHorizontal_bias="0.957"
+            app:layout_constraintStart_toStartOf="@+id/progressBar2"
+            app:layout_constraintTop_toTopOf="@+id/progressBar2"
+            app:layout_constraintVertical_bias="0.166" />
+
+        <TextView
+            android:id="@+id/spent_grub"
+            android:layout_width="124dp"
+            android:layout_height="28dp"
+            android:text="@string/spentGrub"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar3"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar3"
+            app:layout_constraintHorizontal_bias="0.957"
+            app:layout_constraintStart_toStartOf="@+id/progressBar3"
+            app:layout_constraintTop_toTopOf="@+id/progressBar3"
+            app:layout_constraintVertical_bias="0.148" />
+
+        <TextView
+            android:id="@+id/spent_car"
+            android:layout_width="124dp"
+            android:layout_height="28dp"
+            android:text="@string/spentCar"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar4"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar4"
+            app:layout_constraintHorizontal_bias="0.957"
+            app:layout_constraintStart_toStartOf="@+id/progressBar4"
+            app:layout_constraintTop_toTopOf="@+id/progressBar4"
+            app:layout_constraintVertical_bias="0.129" />
+
+        <TextView
+            android:id="@+id/spent_entertainment"
+            android:layout_width="124dp"
+            android:layout_height="28dp"
+            android:text="@string/spentEntertainment"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar5"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar5"
+            app:layout_constraintHorizontal_bias="0.96"
+            app:layout_constraintStart_toStartOf="@+id/progressBar5"
+            app:layout_constraintTop_toTopOf="@+id/progressBar5"
+            app:layout_constraintVertical_bias="0.132" />
+
+        <TextView
+            android:id="@+id/spent_other"
+            android:layout_width="124dp"
+            android:layout_height="28dp"
+            android:text="@string/spentOther"
+            android:textColor="@android:color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar6"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar6"
+            app:layout_constraintHorizontal_bias="0.96"
+            app:layout_constraintStart_toStartOf="@+id/progressBar6"
+            app:layout_constraintTop_toTopOf="@+id/progressBar6"
+            app:layout_constraintVertical_bias="0.15" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

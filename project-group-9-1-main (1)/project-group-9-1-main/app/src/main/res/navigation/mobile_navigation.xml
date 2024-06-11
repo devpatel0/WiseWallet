@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.mobileapp.wisewallet.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.mobileapp.wisewallet.ui.purchases.PurchasesFragment"
+        android:label="@string/purchases"
+        tools:layout="@layout/fragment_purchases" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.mobileapp.wisewallet.ui.slideshow.ChatBotFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_transfer"
+        android:name="com.mobileapp.wisewallet.ui.transfer.TransferFragment"
+        android:label="@string/menu_transfer"
+        tools:layout="@layout/fragment_transfer" />
+    <fragment
+        android:id="@+id/nav_budget"
+        android:name="com.mobileapp.wisewallet.ui.Budget.BudgetFragment"
+        android:label="@string/menu_budget"
+        tools:layout="@layout/fragment_budget" />
+</navigation>
